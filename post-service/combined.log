@@ -18,3 +18,7 @@
 {"level":"error","message":"User ID is missing","service":"post-service","timestamp":"2025-06-09T10:17:20.201Z"}
 {"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-06-09T10:17:41.502Z"}
 {"level":"info","message":"Received body undefined","service":"post-service","timestamp":"2025-06-09T10:17:41.502Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-09T10:36:00.556Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-09T10:36:02.325Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-09T10:36:03.795Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-09T10:36:05.427Z"}
