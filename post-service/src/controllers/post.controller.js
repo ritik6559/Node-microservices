@@ -7,7 +7,7 @@ const createPost = async (req, res) => {
         const {content, mediaIds} = req.body;
 
         const newPost = new Post({
-            user: req.user,userId,
+            user: req.user.userId,
             content,
             mediaIds: mediaIds || [],
         });
@@ -19,7 +19,7 @@ const createPost = async (req, res) => {
         res.status(201).json({
             success: true,
             message: "post created successfully",
-            post
+            newPost
         });
 
     } catch (e) {

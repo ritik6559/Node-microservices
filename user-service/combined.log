@@ -78,3 +78,9 @@
 {"level":"info","message":"Connected to DB","service":"user-service","timestamp":"2025-06-06T10:06:45.005Z"}
 {"level":"info","message":"User service running on PORT: 3001","service":"user-service","timestamp":"2025-06-06T10:07:20.848Z"}
 {"level":"info","message":"Connected to DB","service":"user-service","timestamp":"2025-06-06T10:07:22.556Z"}
+{"level":"info","message":"User service running on PORT: 3001","service":"user-service","timestamp":"2025-06-06T11:48:18.281Z"}
+{"level":"info","message":"Connected to DB","service":"user-service","timestamp":"2025-06-06T11:48:19.905Z"}
+{"level":"info","message":"User service running on PORT: 3001","service":"user-service","timestamp":"2025-06-09T10:13:05.773Z"}
+{"level":"info","message":"Connected to DB","service":"user-service","timestamp":"2025-06-09T10:13:07.310Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2025-06-09T10:15:06.572Z"}
+{"level":"info","message":"Login endpoint hit...","service":"user-service","timestamp":"2025-06-09T10:15:06.574Z"}

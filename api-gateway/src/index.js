@@ -10,6 +10,7 @@ const proxy = require('express-http-proxy')
 
 const logger = require('./utils/logger')
 const errorHandler = require("./middleware/error-handler");
+const validateToken = require('./middleware/auth-middleware');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -54,7 +55,7 @@ const proxyOptions = {
         res.status(500).json({
             message: "Internal Server Error",
             error: err.message
-        })
+        });
     }
 }
 
@@ -71,10 +72,27 @@ app.use('/v1/auth', proxy( process.env.USER_SERVICE_URL, {
     }
 }));
 
+//setting up proxy for post-service
+app.use('/v1/post', validateToken, proxy( process.env.POST_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+        proxyReqOpts.headers['Content-Type'] = 'application/json'
+        proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+
+        return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+        logger.info('Response received from Post Service: ' + proxyRes.statusCode)
+        return proxyResData;
+    }
+}));
+
+
 app.use(errorHandler)
 
 app.listen(PORT, () => {
     logger.info(`Api-Gateway listening on ${PORT}`);
     logger.info('User Service running on PORT: ', process.env.USER_SERVICE_URL);
+    logger.info('Post Service running on PORT: ', process.env.POST_SERVICE_URL);
     logger.info('Redis Url: ', process.env.REDIS_URL);
 });

@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const Redis = require('ioredis');
 const cors = require('cors');
 const helmet = require('helmet');
-const {} = require('')
 
 const postRoutes = require('./routes/post.route');
 const errorHandler = require('./middleware/error-handler');
