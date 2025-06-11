@@ -20,20 +20,6 @@ const connectRabbitMQ = async () => {
     }
 }
 
-const publishEvent = async (routingKey, message) => {
-    try{
-
-        if( !channel ){
-            await connectRabbitMQ();
-        }
-
-        await channel.publish(EXCHANGE_NAME, routingKey, Buffer.from(JSON.stringify(message)) );
-    } catch (e) {
-        logger.error('Media service error publishing event to RabbitMq', e);
-        throw e;
-    }
-}
-
 const consumeEvent = async (routingKey, callback) => {
 
     if( !channel ){
@@ -55,6 +41,5 @@ const consumeEvent = async (routingKey, callback) => {
 
 module.exports = {
     connectRabbitMQ,
-    publishEvent,
     consumeEvent,
 };
