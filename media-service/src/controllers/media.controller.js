@@ -1,6 +1,6 @@
 const logger = require('../utils/logger');
 const Media = require("../models/Media");
-const uploadMediaToCloudinary = require('../utils/cloudinary')
+const {uploadMediaToCloudinary} = require('../utils/cloudinary')
 
 const uploadMedia = async (req, res) => {
     logger.info('Uploading media...');
@@ -50,6 +50,22 @@ const uploadMedia = async (req, res) => {
     }
 }
 
+const getAllMedia = async(req, res) => {
+    try{
+
+        const result = await Media.find({});
+        res.json({result});
+
+    } catch (e) {
+        logger.error("Error getting all media", error);
+        res.status(500).json({
+            success: false,
+            message: "Error getting all media",
+        });
+    }
+}
+
 module.exports = {
-    uploadMedia
+    uploadMedia,
+    getAllMedia
 };

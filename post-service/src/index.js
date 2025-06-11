@@ -8,6 +8,7 @@ const postRoutes = require('./routes/post.route');
 const errorHandler = require('./middleware/error-handler');
 const logger = require('./utils/logger');
 const initdatabase = require('./database/db')
+const {connectRabbitMQ} = require("./utils/rabbitmq");
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -27,7 +28,7 @@ app.use((req, res, next) => {
     logger.info(`Received ${req.method} request to ${req.url}`);
     logger.info(`Received body ${req.body}`);
     next();
-})
+});
 
 app.use('/api/posts', (req, res, next) => {
     res.redisClient = redisClient;
@@ -36,6 +37,17 @@ app.use('/api/posts', (req, res, next) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-    logger.info('Listening on port ' + PORT);
-})
+async function startSession(){
+    try{
+        await connectRabbitMQ();
+        app.listen(PORT, () => {
+            logger.info('Listening on port ' + PORT);
+        })
+
+    } catch (err) {
+        logger.error('Error starting session: ' + err.stack);
+        process.exit(1);
+    }
+}
+
+startSession()

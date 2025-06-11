@@ -22,3 +22,39 @@
 {"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-09T10:36:02.325Z"}
 {"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-09T10:36:03.795Z"}
 {"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-09T10:36:05.427Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:51:01.589Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:51:01.593Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:51:03.274Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:57:37.623Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:57:37.628Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:57:39.325Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:57:50.823Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:57:50.829Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:57:52.067Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:58:09.651Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:58:09.653Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:58:10.944Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:58:12.604Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:58:12.607Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:58:13.719Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:59:25.224Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:59:25.228Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:59:26.840Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:59:42.900Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:59:42.904Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:59:44.433Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T09:59:51.407Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T09:59:51.410Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T09:59:52.519Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T10:01:42.305Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T10:01:42.308Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T10:01:43.955Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T10:01:58.037Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T10:01:58.042Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T10:01:59.099Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T10:02:02.400Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T10:02:02.404Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T10:02:03.500Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2025-06-11T10:02:15.595Z"}
+{"level":"info","message":"Listening on port 3002","service":"post-service","timestamp":"2025-06-11T10:02:15.599Z"}
+{"level":"info","message":"Connected to DB","service":"post-service","timestamp":"2025-06-11T10:02:16.690Z"}
