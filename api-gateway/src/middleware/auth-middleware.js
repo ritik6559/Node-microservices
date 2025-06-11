@@ -29,4 +29,4 @@ const validateToken = (req, res, next) => {
     next();
 }
 
-module.exports = validateToken()
+module.exports = validateToken

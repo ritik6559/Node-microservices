@@ -12,7 +12,7 @@ const logger = winston.createLogger({
         winston.format.json(),
     ),
     defaultMeta: {
-        service: 'api-gateway',
+        service: 'media-service',
     },
     transports: [
         new winston.transports.Console({
